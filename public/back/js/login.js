@@ -86,7 +86,8 @@
         if(info.error===1000){
           //alert("用户名不存在")
           //将表单用户名校验状态从成功更新成失败 并且给用户提示
-          $('#form').data("bootstrapVlidator").updateStatus("username","INVALID","callback");
+          $('#form').data("bootstrapValidator").updateStatus("username","INVALID","callback");
+        
 
         }
         if(info.error===1001){
@@ -96,7 +97,8 @@
           //参数1:字段名称
           //参数2 校验状态 NOT_VALIDATED 未校验的 
           // VALIDATING 校验中 INVALID失败or VALID成功
-          $('#form').data("bootstarpValidator").updateStatus("password","INVALID","callback")
+          $('#form').data("bootstrapValidator").updateStatus("password","INVALID","callback");
+        
         }
       }
     })

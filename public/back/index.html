@@ -5,8 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
-    后台管理系统首页
+   <!-- 左边测边栏 -->
+   <div class="lt_aside">
+       <!-- 标题 -->
+       <div class="brand">
+           <a href="#">黑马26期</a>
+       </div>
+       <div class="user">
+           <img src="./images/33.jpg" alt="">
+           <p>超级管理员</p>
+       </div>
+       <div class="nav">
+           <ul>
+               <li><a href="user.html"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+               <li>
+                   <a href="javascript:;"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
+                    <div class="child" style="display: none">
+                        <a href="first.html">一级分类</a>
+                        <a href="second.html">二级分类</a>
+                    </div>
+                </li>
+               <li><a href="product.html"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
+           </ul>
+       </div>
+   </div>
+
+   <!-- 右侧主体部分 -->
+   <div class="lt_main">
+       <!-- 头部导航 -->
+       <div class="lt_topbar">
+           <a href="javascript:;" class="pull-left">
+               <i class="glyphicon glyphicon-align-justify"></i>
+           </a>
+           <a href="javascript:;" class="pull-right">
+               <i class="glyphicon glyphicon-log-out"></i>
+           </a>
+       </div>
+       <!-- 底部容器 使用container-fluid流式布局 宽度百分比 有默认的padd -->
+       <div class="container-fluid">
+           <!-- 使用bootstrap组件 路径导航 -->
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Library</a>
+            </li>
+            <li class="active">Data</li>
+        </ol>
+       </div>
+   </div>
 </body>
 </html>
