@@ -12,7 +12,13 @@ ul {
     list-style: none;
 }
 
-
+/* 表格对齐方式 */
+.table.table-bordered tr th,
+.table.table-bordered tr td {
+    text-align: center;
+    /* 表格中垂直对齐方式 */
+    vertical-align: middle;
+}
 
 /* 登录页 */
 .body_bg {
@@ -27,7 +33,9 @@ ul {
 .mt_150 {
     margin-top: 150px;
 }
-
+.red {
+  color: #A94442;
+}
 
 
 /* 首页左边侧边栏 */
@@ -39,6 +47,10 @@ ul {
     left: 0;
     top: 0;
     z-index: 999;
+    transition: all 1s;
+}
+.lt_aside.hidemenu{
+    left: -180px;
 }
 .lt_aside .brand {
     width: 100%;
@@ -88,7 +100,9 @@ color: #fff;
 .lt_aside .nav a i {
     margin-right: 5px;
 }
-
+.lt_aside .nav .child a{
+    padding-left: 60px;
+}
 /* 右侧主体部分 */
 .lt_main .lt_topbar {
     width: 100%;
@@ -99,6 +113,11 @@ color: #fff;
     left: 0;
     top: 0;
     background-color: #3C8DBC;
+    transition: all 1s;
+    z-index: 666;
+}
+.lt_main .lt_topbar.hidemenu{
+    padding-left: 0;
 }
 .lt_main .lt_topbar a {
     width: 50px;
@@ -113,7 +132,19 @@ color: #fff;
     height: 1000px;
     padding-left: 180px;
       margin-top: 50px;
+      transition: all 1s;
 }
 .lt_main .breadcrumb{
   margin-top: 20px;
+}
+.lt_main.hidemenu{
+    padding-left: 0;
+}
+
+/* 首页图表 */
+.echarts_1,
+.echarts_2{
+    width: 48%;
+    height: 400px;
+    background-color: skyblue;
 }
